@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .form-input {
+        @apply w-full px-5 py-3 rounded-lg border border-gray-300 bg-gray-50 transition-colors duration-300 focus:ring-2 focus:ring-orange-500 focus:border-orange-500 dark:bg-gray-700 dark:border-gray-600 dark:text-white;
+    }
+
+    .btn {
+        @apply px-6 py-3 rounded-lg font-semibold shadow-md transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2;
+    }
+
+    .btn-primary {
+        @apply btn text-white bg-orange-500 hover:bg-orange-600 focus:ring-orange-500;
+    }
+
+    .btn-secondary {
+        @apply btn text-gray-700 bg-gray-100 hover:bg-gray-200 focus:ring-gray-400 dark:text-gray-200 dark:bg-gray-600 dark:hover:bg-gray-500;
+    }
+}
+
+/* Genel stil ayarları */
+body {
+    @apply antialiased text-gray-900 dark:text-gray-200;
+    user-select: none;
+}
+
+/* Tüm elementler için varsayılan olarak default cursor */
+* {
+    cursor: default !important;
+}
+
+/* Sadece tıklanabilir elementler için pointer cursor */
+a,
+button,
+[role="button"],
+input[type="submit"],
+input[type="button"],
+.card,
+.recipe-card,
+.modal-content,
+[onClick] {
+    cursor: pointer !important;
+}
+
+/* Form elemanları için text cursor */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="url"],
+textarea,
+select {
+    cursor: text !important;
+    user-select: text;
+}
+
+/* Tıklanabilir olmayan metin için default cursor ve seçilemez */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+div:not([role="button"]):not([onClick]) {
+    cursor: default !important;
+    user-select: none;
+}
+
+/* Resimler için default cursor */
+img {
+    cursor: default !important;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+/* Kartlar ve diğer tıklanabilir container'lar için pointer cursor */
+.card,
+.recipe-card,
+.modal-content {
+    cursor: pointer !important;
+    user-select: none;
+}
+
+/* Tıklanabilir olmayan container'lar için default cursor */
+.container:not([role="button"]):not([onClick]),
+.wrapper:not([role="button"]):not([onClick]) {
+    cursor: default !important;
+    user-select: none;
+}
