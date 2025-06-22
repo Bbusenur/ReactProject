@@ -29,8 +29,11 @@ Follow these steps to run the project on your local machine:
     ```bash
     npm install
     ```
+    ```bash
+    npm install react-toastify
+    ```
 
-2.  **Start the project:**
+3.  **Start the project:**
     ```bash
     npm run dev
     ```
