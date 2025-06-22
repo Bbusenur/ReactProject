@@ -36,7 +36,7 @@ function ChangePassword() {
                         initialValues={{
                             currentPassword: '',
                             newPassword: '',
-                            confirmPassword: '', // Changed from confirmNewPassword to confirmPassword
+                            confirmNewPassword: '',
                         }}
                         validationSchema={validationSchema}
                         onSubmit={(values, { setSubmitting, setFieldError }) => {
@@ -94,11 +94,11 @@ function ChangePassword() {
                                     <div>
                                         <label className="block text-sm font-medium text-gray-700 dark:text-gray-300">Yeni Şifre Tekrar</label>
                                         <Field
-                                            name="confirmPassword"
+                                            name="confirmNewPassword"
                                             type="password"
                                             className="form-input"
                                         />
-                                        <ErrorMessage name="confirmPassword" component="div" className="text-red-600 mt-1" />
+                                        <ErrorMessage name="confirmNewPassword" component="div" className="text-red-600 mt-1" />
                                     </div>
                                     <button
                                         type="submit"
