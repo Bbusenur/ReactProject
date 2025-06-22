@@ -1,46 +1,46 @@
 # RecipeApp
 
-Bu proje, kullanıcıların kendi yemek tariflerini oluşturabileceği, paylaşabileceği ve diğer kullanıcıların tariflerini keşfedebileceği modern bir web uygulamasıdır. Kullanıcı dostu arayüzü ile tariflerinizi kolayca yönetebilirsiniz.
+This project is a modern web application where users can create, share, and discover recipes. With its user-friendly interface, you can easily manage your recipes.
 
-## ✨ Özellikler
+## ✨ Features
 
--   **Kullanıcı Yönetimi:** Kayıt olma ve giriş yapma işlemleri.
--   **Tarif Oluşturma:** Yeni yemek tarifleri ekleme, düzenleme ve silme.
--   **Tarifleri Görüntüleme:** Tüm tarifleri liste halinde görme ve detaylarını inceleme.
--   **Favoriler:** Beğendiğiniz tarifleri favorilerinize ekleme.
--   **Karanlık/Aydınlık Mod:** Tema değiştirme özelliği.
--   **Duyarlı Tasarım:** Mobil ve masaüstü cihazlarla uyumlu arayüz.
+-   **User Management:** Sign up and log in functionalities.
+-   **Recipe Creation:** Add, edit, and delete new food recipes.
+-   **View Recipes:** See all recipes in a list and view their details.
+-   **Favorites:** Add your favorite recipes to your favorites list.
+-   **Dark/Light Mode:** Theme switching feature.
+-   **Responsive Design:** An interface compatible with mobile and desktop devices.
 
-## 🛠️ Kullanılan Teknolojiler
+## 🛠️ Technologies Used
 
 -   **Frontend:** React, TypeScript, Tailwind CSS
--   **Build Aracı:** Vite
+-   **Build Tool:** Vite
 -   **Routing:** React Router DOM
--   **Form Yönetimi:** Formik
--   **Form Validasyonu:** Yup
+-   **Form Management:** Formik
+-   **Form Validation:** Yup
 -   **Linting:** ESLint
--   **Bildirimler:** React Toastify
+-   **Notifications:** React Toastify
 
-## 🚀 Kurulum
+## 🚀 Setup
 
-Projeyi yerel makinenizde çalıştırmak için aşağıdaki adımları izleyin:
+Follow these steps to run the project on your local machine:
 
-1.  **Gerekli paketleri yükleyin:**
+1.  **Install the necessary packages:**
     ```bash
     npm install
     ```
 
-2.  **Projeyi başlatın:**
+2.  **Start the project:**
     ```bash
     npm run dev
     ```
-    Uygulama varsayılan olarak geliştirme sunucusunda başlayacaktır. Terminalde belirtilen adrese (genellikle `http://localhost:5173`) giderek uygulamayı görüntüleyebilirsiniz.
+    The application will start on the development server by default. You can view the application by navigating to the address specified in the terminal (usually `http://localhost:5173`).
 
-## 📜 Kullanılabilir Komutlar
+## 📜 Available Scripts
 
-Proje dizininde aşağıdaki komutları kullanabilirsiniz:
+In the project directory, you can run:
 
--   `npm run dev`: Geliştirme sunucusunu başlatır.
--   `npm run build`: Projeyi üretim için derler.
--   `npm run lint`: ESLint ile kod stilini denetler.
--   `npm run preview`: Üretim derlemesini yerel olarak önizler.
+-   `npm run dev`: Starts the development server.
+-   `npm run build`: Bundles the app for production.
+-   `npm run lint`: Lints the code using ESLint.
+-   `npm run preview`: Locally previews the production build.
